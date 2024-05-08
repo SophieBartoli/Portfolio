@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@mixin fontStyle {
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+$primary-color: black;
+
+
+
+* {
+    @include fontStyle;
+
+    p, h1, h2, h3 {
+        cursor: default;
+    }
+}
+
+.headerNavbar {
+    background-color: #0C0C0C;
+    padding: 0 !important;
+    height: 70px;
+    border-bottom: 1px solid grey;
+
+    .headerNav {
+        @include row;
+        align-items: center;
+
+        .nav-link {
+            color: white;
+            margin: 0 10px 0 0 !important;
+        }
+    
+        img {
+            height: 40px;
+            width: auto;
+            margin: 5px 30px;
+            border: 1px solid grey;
+            border-radius: 10%;
+        }
+    }
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: grey !important;
+}
+
+
+.aProposDiv {
+    @include row;
+    margin: 50px 0 0 0;
+    justify-content: space-between;
+    height: 600px;
+    color: lightgrey;
+    background-color: #0C0C0C;
+
+    button {
+        background-color: #0C0C0C;
+        border: none;
+        color: grey;
+    }
+
+    .firstSlide {
+        @include row;
+        width: 80%;
+        justify-content: space-around;
+        align-items: center;
+
+        div {
+            @include column;
+            align-items: center;
+
+            h1 {
+                margin: 0 0 50px 0;
+                font-size: 60px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .logoImg {
+            height: 80%;
+            width: auto;
+            border: 3px solid grey;
+            border-radius: 5%;
+        } 
+    }
+
+    .secondSlide {
+        @include column;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            margin: 0 0 50px 0;
+            font-size: 60px;
+        }
+
+        .hobbies {
+            @include row;
+
+            div {
+                margin: 0 15px 0 15px;
+                @include column;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    position: relative;
+                    width: 400px;
+                    height: auto;
+                    border: 3px solid grey;
+                    border-radius: 5%;
+                } 
+
+                p {
+                    position: absolute;
+                    font-size: 30px;
+                    opacity: 0;
+                    text-align: center;
+                }
+            }
+
+            :hover img {
+                filter: brightness(30%);
+            }
+
+            :hover p {
+                opacity: 1;
+            }
+
+        }
+    }
+
+    .descriptionDiv {
+        @include column;
+    }
+}
+
+.footerDiv {
+    @include column;
+    border: 2px solid red;
+    align-items: center;
+    background-color: black;
+    color: white;
+
+    .footerLogo {
+        width: 200px;
+        height: auto;
+    }
+
+    .buttonDiv {
+        @include row;
+
+        button {
+            border: 2 px solid white;
+            width: 100px;
+            height: auto;
+        }
+        
+    }
+
+    .buttonLogo {
+        object-fit: cover;
+        border: 2px solid red;
+    }
+}
