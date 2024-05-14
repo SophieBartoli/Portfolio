@@ -17,6 +17,7 @@
 $primary-color: black;
 
 
+///Navbar///
 
 * {
     @include fontStyle;
@@ -55,6 +56,8 @@ $primary-color: black;
     color: grey !important;
 }
 
+
+///A propos///
 
 .aProposDiv {
     @include row;
@@ -150,11 +153,78 @@ $primary-color: black;
     }
 }
 
+
+///Competences///
+
+#competences {
+    background-color: #481E14;
+    border-top: 2px solid grey;
+    @include column;
+    align-items: center;
+
+    h2 {
+        font-weight: bold;
+        font-size: 40px;
+        margin: 90px 0 0 0;
+        color: #0C0C0C;
+    }
+
+    .competencesDiv {
+        height: 600px;
+        @include row;
+        align-items: center;
+
+        .competencesCards {
+            border: 2px solid darkgrey;
+            margin: 0 20px 0 20px;
+            height: 400px;
+            border-radius: 5%;
+
+            img {
+                height: 180px;
+                object-fit: cover;
+            }
+
+            .cardBody {
+                @include column;
+                justify-content: space-between;
+                align-items: center;
+
+                .cardTitle {
+                    font-weight: bold;
+
+                }
+
+                .cardText {
+                    text-align: center;
+                }
+            }
+        }  
+    }  
+}
+
+
+///Projets///
+
+#projets {
+    height: 600px;
+    background-color: #9B3922;
+}
+
+
+///Contact///
+
+#contact {
+    height: 600px;
+    background-color: #F2613F;
+}
+
+///Footer///
+
 .footerDiv {
     @include column;
-    border: 2px solid red;
     align-items: center;
-    background-color: black;
+    background-color: #0C0C0C;
     color: white;
 
     .footerLogo {
