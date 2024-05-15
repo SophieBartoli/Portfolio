@@ -157,7 +157,7 @@ $primary-color: black;
 ///Competences///
 
 #competences {
-    background-color: #481E14;
+    background-color: white;
     border-top: 2px solid grey;
     @include column;
     align-items: center;
@@ -208,7 +208,46 @@ $primary-color: black;
 
 #projets {
     height: 600px;
-    background-color: #9B3922;
+    background-color: #0C0C0C;
+    @include column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        color: white;
+    }
+
+    .projetsDiv {
+        @include row;
+
+        .card {
+            @include column; 
+            margin: 0 20px 0 20px;
+            height: 300px;
+            width: 300px;
+            border: 2px solid red;
+            
+
+            button {
+                border: none;
+                width: 100%;
+                height: 100%;
+                border: 2px solid green;
+
+                img {
+                    object-fit: cover;
+                    width: 300px;
+                    height: 300px;
+                    border: 2px solid blue;
+                    position: relative;
+                }
+            }
+        }
+    }
+}
+
+.cardText {
+    position: absolute;
 }
 
 
@@ -216,7 +255,7 @@ $primary-color: black;
 
 #contact {
     height: 600px;
-    background-color: #F2613F;
+    background-color: white;
 }
 
 ///Footer///
