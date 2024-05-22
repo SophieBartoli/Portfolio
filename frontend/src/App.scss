@@ -66,11 +66,35 @@ $primary-color: black;
     height: 600px;
     color: lightgrey;
     background-color: #0C0C0C;
+    position: relative;
 
     button {
         background-color: #0C0C0C;
         border: none;
         color: grey;
+        position: relative;
+    }
+
+    .lanterneLogo {
+        height: 200px;
+        width: auto;
+        position: absolute;
+        margin: 20px 0 0 0;
+    }
+
+    #lanterneDeux {
+        height: 150px;
+        margin: 20px 0 0 150px;
+    }
+
+    #lanterneTrois {
+        margin: 20px 0 0 1300px;
+        z-index: 2;
+    }
+
+    #lanterneQuatre {
+        height: 150px;
+        margin: 20px 0 0 1200px;
     }
 
     .firstSlide {
@@ -98,6 +122,7 @@ $primary-color: black;
             width: auto;
             border: 3px solid grey;
             border-radius: 5%;
+            z-index: 2;
         } 
     }
 
@@ -256,6 +281,11 @@ $primary-color: black;
 #contact {
     height: 600px;
     background-color: white;
+
+    img {
+        height: 200px;
+        width: auto;
+    }
 }
 
 ///Footer///
@@ -278,6 +308,11 @@ $primary-color: black;
             border: 2 px solid white;
             width: 100px;
             height: auto;
+
+            img {
+                height: 200px;
+                width: auto;
+            }
         }
         
     }

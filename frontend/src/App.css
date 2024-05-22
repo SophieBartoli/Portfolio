@@ -41,11 +41,31 @@
   height: 600px;
   color: lightgrey;
   background-color: #0C0C0C;
+  position: relative;
 }
 .aProposDiv button {
   background-color: #0C0C0C;
   border: none;
   color: grey;
+  position: relative;
+}
+.aProposDiv .lanterneLogo {
+  height: 200px;
+  width: auto;
+  position: absolute;
+  margin: 20px 0 0 0;
+}
+.aProposDiv #lanterneDeux {
+  height: 150px;
+  margin: 20px 0 0 150px;
+}
+.aProposDiv #lanterneTrois {
+  margin: 20px 0 0 1300px;
+  z-index: 2;
+}
+.aProposDiv #lanterneQuatre {
+  height: 150px;
+  margin: 20px 0 0 1200px;
 }
 .aProposDiv .firstSlide {
   display: flex;
@@ -71,6 +91,7 @@
   width: auto;
   border: 3px solid grey;
   border-radius: 5%;
+  z-index: 2;
 }
 .aProposDiv .secondSlide {
   display: flex;
@@ -205,6 +226,10 @@
   height: 600px;
   background-color: white;
 }
+#contact img {
+  height: 200px;
+  width: auto;
+}
 
 .footerDiv {
   display: flex;
@@ -225,6 +250,10 @@
   border: 2 px solid white;
   width: 100px;
   height: auto;
+}
+.footerDiv .buttonDiv button img {
+  height: 200px;
+  width: auto;
 }
 .footerDiv .buttonLogo {
   object-fit: cover;
