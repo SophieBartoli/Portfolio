@@ -1,8 +1,13 @@
+import { faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function ProjetsCards({imgSource, imgAlt, imgTitle, imgText}) {
+
+
+function ProjetsCards({imgSource, imgAlt, imgTitle, imgText, imgUrl}) {
+
   return (
       <div className="card">
-        <button> <img src={imgSource} alt={imgAlt}/> </button>
+          <a href={imgUrl} target="_blank" rel="noopener noreferrer"> <img src={imgSource} alt={imgAlt}/> <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="imgIcon"/> </a>
         <div className="cardText">
           <h3>{imgTitle}</h3>
           <p>{imgText}</p>

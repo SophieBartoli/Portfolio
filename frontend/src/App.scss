@@ -80,6 +80,7 @@ $primary-color: black;
         width: auto;
         position: absolute;
         margin: 20px 0 0 0;
+        opacity: 0.7;
     }
 
     #lanterneDeux {
@@ -88,13 +89,13 @@ $primary-color: black;
     }
 
     #lanterneTrois {
-        margin: 20px 0 0 1300px;
+        margin: 20px 0 0 1230px;
         z-index: 2;
     }
 
     #lanterneQuatre {
         height: 150px;
-        margin: 20px 0 0 1200px;
+        margin: 20px 0 0 1150px;
     }
 
     .firstSlide {
@@ -123,6 +124,7 @@ $primary-color: black;
             border: 3px solid grey;
             border-radius: 5%;
             z-index: 2;
+            opacity: 0.8;
         } 
     }
 
@@ -190,12 +192,12 @@ $primary-color: black;
     h2 {
         font-weight: bold;
         font-size: 40px;
-        margin: 90px 0 0 0;
+        margin: 60px 0 0 0;
         color: #0C0C0C;
     }
 
     .competencesDiv {
-        height: 600px;
+        height: 500px;
         @include row;
         align-items: center;
 
@@ -204,10 +206,13 @@ $primary-color: black;
             margin: 0 20px 0 20px;
             height: 400px;
             border-radius: 5%;
+            box-shadow: 5px 5px 5px 5px darkgrey;
 
             img {
                 height: 180px;
                 object-fit: cover;
+                border-radius: 20%;
+                opacity: 0.8;
             }
 
             .cardBody {
@@ -217,6 +222,7 @@ $primary-color: black;
 
                 .cardTitle {
                     font-weight: bold;
+                    margin: 20px 0 0 0;
 
                 }
 
@@ -240,6 +246,9 @@ $primary-color: black;
 
     h2 {
         color: white;
+        margin: 0 0 60px 0;
+        font-weight: bold;
+        font-size: 40px;
     }
 
     .projetsDiv {
@@ -250,29 +259,56 @@ $primary-color: black;
             margin: 0 20px 0 20px;
             height: 300px;
             width: 300px;
-            border: 2px solid red;
-            
+            position: relative;
+            background-color: #0C0C0C;
+            align-items: center;
+            justify-content: center;
 
-            button {
+            .cardText {
+                position: absolute;
+                color: white;
+                font-weight: bold;
+                width: 300px;
+                margin: 220px 0 0 0;
+                padding: 0 0 0 10px;
+                background: rgba(0,0,0,0.5);
+                border-bottom-left-radius: 10%;
+                border-bottom-right-radius: 10%;
+            }            
+            
+            a {
                 border: none;
                 width: 100%;
                 height: 100%;
-                border: 2px solid green;
+                position: relative;
+                @include column;
+                align-items: center;
+                justify-content: center;
+                background-color: #0C0C0C;
 
                 img {
                     object-fit: cover;
                     width: 300px;
                     height: 300px;
-                    border: 2px solid blue;
                     position: relative;
+                    filter: brightness(70%);
+                    border-radius: 10%;
+                    border: 2px solid grey;
                 }
+
+                .imgIcon {
+                    color: white;
+                    position: absolute;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+            } 
+
+            :hover img{
+                filter: brightness(50%);
             }
         }
     }
-}
-
-.cardText {
-    position: absolute;
 }
 
 
@@ -281,10 +317,50 @@ $primary-color: black;
 #contact {
     height: 600px;
     background-color: white;
+    @include column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    h2 {
+        margin: -150px 0 100px 0;
+        font-weight: bold;
+        font-size: 40px;
+    }
+
+    .contactForm {
+        @include column;
+        text-align: center;
+        z-index: 2;
+        font-weight: bold;
+
+        label {
+            margin: 0 0 0 0;
+        }
+
+        input {
+            margin: 20px 0 0 0;
+            line-height: 1.42857143;
+        }
+
+        .messageInput {
+            height: 100px;
+        }
+
+        div {
+
+            input {
+                margin: 20px 30px 60px 30px;
+            }
+        }
+    }
 
     img {
-        height: 200px;
+        height: 700px;
         width: auto;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.5;
     }
 }
 
