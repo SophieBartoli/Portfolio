@@ -264,39 +264,51 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 #contact h2 {
-  margin: -150px 0 100px 0;
+  margin: 0 0 0 0;
   font-weight: bold;
   font-size: 40px;
 }
-#contact .contactForm {
+#contact .contactDivs {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+}
+#contact .contactDivs .contactForm {
   display: flex;
   flex-direction: column;
   text-align: center;
   z-index: 2;
   font-weight: bold;
 }
-#contact .contactForm label {
+#contact .contactDivs .contactForm label {
+  margin: 20px 0 10px 0;
+}
+#contact .contactDivs .contactForm input {
   margin: 0 0 0 0;
 }
-#contact .contactForm input {
-  margin: 20px 0 0 0;
-  line-height: 1.42857143;
+#contact .contactDivs .contactForm input:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
 }
-#contact .contactForm .messageInput {
-  height: 100px;
+#contact .contactDivs .contactForm textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
 }
-#contact .contactForm div input {
-  margin: 20px 30px 60px 30px;
+#contact .contactDivs .contactForm .contactUser {
+  display: flex;
+  flex-direction: row;
 }
-#contact img {
-  height: 700px;
+#contact .contactDivs img {
+  height: 400px;
   width: auto;
-  position: absolute;
-  z-index: 1;
-  opacity: 0.5;
+  opacity: 0.8;
+  border: 2px solid blue;
 }
 
 .footerDiv {
