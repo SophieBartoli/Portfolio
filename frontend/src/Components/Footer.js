@@ -5,9 +5,9 @@ import logoLinkedin from '../Assets/Logos/logoLinkedin.webp';
 const Footer = () => {
     return (
         <div className="footerDiv">
-            <div className="buttonDiv">
-                <button> <img clasName="buttonLogo" src={logoGit} alt="logo GitHub"/> </button>
-                <button> <img clasName="buttonLogo" src={logoLinkedin} alt="logo Linkedin"/> </button>
+            <div className="footerLinksDiv">
+                <a href="https://github.com/SophieBartoli" target="_blank" rel="noopener noreferrer" className="linkLogo"> <img src={logoGit} alt="logo GitHub"/> </a>
+                <a href="https://www.linkedin.com/in/sophie-olivia-bartoli" target="_blank" rel="noopener noreferrer" className="linkLogo"> <img src={logoLinkedin} alt="logo Linkedin"/> </a>
            </div>
            <p>Par Sophie Bartoli</p>
            <img className="footerLogo" src={Logo} alt=""/>

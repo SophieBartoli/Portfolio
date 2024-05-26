@@ -20,12 +20,15 @@ function Contact() {
             </Form.Group>
 
           </div>
+
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
             <Form.Label>Message :</Form.Label>
             <Form.Control as="textarea" rows={3} placeholder="Message" required="true" />
           </Form.Group>
 
-          <input type="submit" value="Envoyer" />
+          <div>
+            <input type="submit" value="Envoyer" className="submitButton"/>
+          </div>
         </Form>
         <img src={logoEmail} alt=""/>
       </div>
