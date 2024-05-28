@@ -20,7 +20,7 @@ function Apropos () {
   return (
     <div id="apropos" className="aProposDiv">
       <button onClick={Toggle}> <FontAwesomeIcon icon={faAngleLeft} size="4x"/> </button>
-      <img className="lanterneLogo" src={lanterne1} alt=""/>
+      <img className="lanterneLogo" id="lanterneUne" src={lanterne1} alt=""/>
       <img className="lanterneLogo" id="lanterneDeux" src={lanterne1} alt=""/>
        {slide ? (
           <div className="firstSlide">
