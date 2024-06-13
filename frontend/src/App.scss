@@ -23,58 +23,45 @@
     p, h1, h2, h3 {
         cursor: default;
     }
+
 }
 
 .headerNavbar {
-    background-color: #272232;
+    background-color: #0d0b11;
     padding: 0 !important;
     height: 70px;
-    border-bottom: 1px solid #FAF0E6;
+    font-size: 20px;
 
-    @media only screen and (max-width: 768px) {
-    }
-
-    @media only screen and (max-width: 480px) {
-    }
-
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 424px) {
         font-size: 10px;
-        border: 2px solid green;
-        width: 320px;
     }
 
     .headerNav {
         @include row;
         align-items: center;
 
-        @media only screen and (max-width: 320px) {
-            border: 2px solid blue;
-            width: 320px;
-        }
 
         .nav-link {
-            color: #FAF0E6;
+            color: #cf6a3f;
             margin: 0 10px 0 0 !important;
 
-            @media only screen and (max-width: 320px) {
-                border: 2px solid red;
-            }
         }
     
         img {
-            height: 40px;
+            height: 60px;
             width: auto;
             margin: 5px 30px;
 
-            @media only screen and (max-width: 320px) {
-                margin: 0 0 0 0;
+            @media only screen and (max-width: 424px) {
+                margin: 0 7px 0 7px;
+                height: 50px;
             }
         }
     }
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: grey !important;
+    color: #FAF0E6 !important;
 }
 
 
@@ -90,63 +77,22 @@
     background-color: #272232;
     position: relative;
 
+    @media (min-width: 425px) and (max-width: 768px) {
+        height: 800px;
+    }
+    
     button {
         background-color: #272232;
         border: none;
         color: #FAF0E6;
         position: relative;
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 424px) {
             font-size: 10px;
         }
 
     }
 
-    .lanterneLogo {
-        height: 160px;
-        width: auto;
-        position: absolute;
-        margin: 20px 0 0 0;
-        opacity: 0.5;
-
-        @media only screen and (max-width: 320px) {
-            height: 80px;
-        }
-    }
-
-    @media only screen and (max-width: 320px) {
-        #lanterneUne {
-            margin: 20px 0 0 -25px;
-        }
-    }
-
-    #lanterneDeux {
-        height: 120px;
-        margin: 20px 0 0 150px;
-
-        @media only screen and (max-width: 320px) {
-            height: 50px;
-            margin: 20px 0 0 40px;
-        }
-    }
-
-    #lanterneTrois {
-        margin: 20px 0 0 1230px;
-
-        @media only screen and (max-width: 320px) {
-            margin: 20px 0 0 230px;
-        }
-    }
-
-    #lanterneQuatre {
-        height: 120px;
-        margin: 20px 0 0 1150px;
-
-        @media only screen and (max-width: 320px) {
-            height: 50px;
-            margin: 20px 0 0 210px;
-        }
-    }
 
     .firstSlide {
         @include row;
@@ -163,18 +109,29 @@
                 margin: 0 0 50px 0;
                 font-size: 60px;
 
-                @media only screen and (max-width: 320px) {
+                @media only screen and (max-width: 424px) {
                     font-size: 30px;
                     text-align: center;
                     margin: 0 0 20px 0;
+                }
+
+                @media (min-width: 425px) and (max-width: 768px) {
+                    font-size: 45px;
+                    text-align: center;
+                    margin: 0 0 60px 0;
                 }
             }
 
             p {
                 font-size: 20px;
 
-                @media only screen and (max-width: 320px) {
+                @media only screen and (max-width: 424px) {
                     font-size: 15px;
+                    text-align: center;
+                }
+
+                @media (min-width: 425px) and (max-width: 768px) {
+                    font-size: 25px;
                     text-align: center;
                 }
             }
@@ -188,8 +145,12 @@
             position: absolute;
 
             
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 424px) {
                 height: 40%;
+            }
+
+            @media (min-width: 425px) and (max-width: 768px) {
+                height: 50%;
             }
         } 
     }
@@ -205,18 +166,28 @@
             margin: 0 0 50px 0;
             font-size: 60px;
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 424px) {
                 font-size: 30px;
                 text-align: center;
                 margin: 0 0 20px 0;
+            }
+
+            @media (min-width: 425px) and (max-width: 768px) {
+                font-size: 40px;
+                text-align: center;
+                margin: 0 0 60px 0;
             }
         }
 
         .hobbies {
             @include row;
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 424px) {
                @include column;
+            }
+
+            @media (min-width: 425px) and (max-width: 768px) {
+                @include column;
             }
 
             div {
@@ -225,10 +196,13 @@
                 align-items: center;
                 justify-content: center;
 
-                @media only screen and (max-width: 320px) {
+                @media only screen and (max-width: 424px) {
                     margin: 0 0 20px 0;
                 }
 
+                @media (min-width: 425px) and (max-width: 768px) {
+                    margin: 0 0 30px 0;
+                }
 
                 img {
                     position: relative;
@@ -237,8 +211,12 @@
                     border: 3px solid #FAF0E6;
                     border-radius: 5%;
 
-                    @media only screen and (max-width: 320px) {
+                    @media only screen and (max-width: 424px) {
                         width: 170px;
+                    }
+
+                    @media (min-width: 425px) and (max-width: 768px) {
+                        width: 250px;
                     }
                 } 
 
@@ -249,7 +227,7 @@
                     text-align: center;
 
                     
-                    @media only screen and (max-width: 320px) {
+                    @media only screen and (max-width: 424px) {
                        font-size: 15px;
                     }
                 }
@@ -263,7 +241,17 @@
                 opacity: 1;
             }
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 424px) {
+                :active img {
+                    filter: brightness(30%);
+                }
+
+                :active p {
+                    opacity: 1;
+                }
+            }
+
+            @media (min-width: 425px) and (max-width: 768px) {
                 :active img {
                     filter: brightness(30%);
                 }
@@ -295,8 +283,14 @@
         margin: 60px 0 0 0;
         color: #352F44;
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 424px) {
             font-size: 30px;
+            text-align: center;
+            margin: 30px 0 50px 0;
+        }
+
+        @media (min-width: 425px) and (max-width: 768px) {
+            font-size: 40px;
             text-align: center;
             margin: 30px 0 50px 0;
         }
@@ -307,9 +301,15 @@
         @include row;
         align-items: center;
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 424px) {
             @include column;
             height: 950px;
+        }
+
+        
+        @media (min-width: 425px) and (max-width: 768px) {
+            @include column;
+            height: 1000px;
         }
 
         .competencesCards {
@@ -319,10 +319,16 @@
             border-radius: 5%;
             box-shadow: 5px 5px 5px 5px darkgrey;
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 424px) {
                 height: 290px;
                 margin: 0 0 30px 0;
                 width: 230px !important;
+            }
+
+            @media (min-width: 425px) and (max-width: 768px) {
+                height: 350px;
+                margin: 0 0 30px 0;
+                width: 300px !important;
             }
 
             img {
@@ -331,8 +337,12 @@
                 border-radius: 20%;
                 opacity: 0.8;
 
-                @media only screen and (max-width: 320px) {
+                @media only screen and (max-width: 424px) {
                     height: 100px;
+                }
+
+                @media (min-width: 425px) and (max-width: 768px) {
+                    height: 150px;
                 }
             }
 
@@ -340,9 +350,6 @@
                 @include column;
                 justify-content: space-between;
                 align-items: center;
-
-                @media only screen and (max-width: 320px) {
-                }
 
                 .cardTitle {
                     font-weight: bold;
@@ -370,8 +377,12 @@
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 424px) {
         height: 1100px;
+    }
+
+    @media (min-width: 425px) and (max-width: 768px) {
+        height: 1500px;
     }
 
     h2 {
@@ -380,8 +391,13 @@
         font-weight: bold;
         font-size: 40px;
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 424px) {
             font-size: 30px;
+            text-align: center;
+        }
+
+        @media (min-width: 425px) and (max-width: 768px) {
+            font-size: 40px;
             text-align: center;
         }
     }
@@ -389,7 +405,11 @@
     .projetsDiv {
         @include row;
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 424px) {
+            @include column;
+        }
+
+        @media (min-width: 425px) and (max-width: 768px) {
             @include column;
         }
 
@@ -404,9 +424,15 @@
             justify-content: center;
             border: none;
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 424px) {
                 height: 200px;
                 width: 250px;
+                margin: 0 0 40px 0;
+            }
+
+            @media (min-width: 425px) and (max-width: 768px) {
+                height: 300px;
+                width: 350px;
                 margin: 0 0 40px 0;
             }
 
@@ -421,11 +447,12 @@
                 border-bottom-left-radius: 30px;
                 border-bottom-right-radius: 30px;
 
-                @media only screen and (max-width: 320px) {
+                @media only screen and (max-width: 424px) {
                     width: 250px;
                     margin: 145px 0 0 0;
                     font-size: 10px;
                 }
+
             }            
             
             a {
@@ -447,7 +474,7 @@
                     border-radius: 10%;
                     box-shadow: 5px 5px 5px 5px rgba(29, 22, 43, 0.7);
 
-                    @media only screen and (max-width: 320px) {
+                    @media only screen and (max-width: 424px) {
                         height: 200px;
                         width: 250px;
                     }
@@ -478,14 +505,20 @@
     justify-content: center;
     align-items: center;
 
+
     h2 {
         margin: 0 0 60px 0;
         font-weight: bold;
         font-size: 40px;
         color: #352F44;
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 424px) {
             font-size: 30px;
+            text-align: center;
+        }
+
+        @media (min-width: 425px) and (max-width: 768px) {
+            font-size: 40px;
             text-align: center;
         }
     }
@@ -503,8 +536,12 @@
             width: 40%;
             justify-content: center;
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 424px) {
                 width: 90%;
+            }
+
+            @media (min-width: 425px) and (max-width: 768px) {
+                width: 80%;
             }
     
             label {
@@ -539,7 +576,11 @@
                 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
                 font-weight: bold;
 
-                @media only screen and (max-width: 320px) {
+                @media only screen and (max-width: 424px) {
+                    width: 40%;
+                }
+
+                @media (min-width: 425px) and (max-width: 768px) {
                     width: 40%;
                 }
             }
@@ -550,7 +591,11 @@
                 justify-content: space-around;
                 margin: 0 0 20px 0;
 
-                @media only screen and (max-width: 320px) {
+                @media only screen and (max-width: 424px) {
+                    @include column;
+                }
+
+                @media (min-width: 425px) and (max-width: 768px) {
                     @include column;
                 }
 
@@ -566,8 +611,14 @@
             width: auto;
             opacity: 0.8;
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 424px) {
                 height: 200px;
+                position: absolute;
+                opacity: 0.3;
+            }
+
+            @media (min-width: 425px) and (max-width: 768px) {
+                height: 400px;
                 position: absolute;
                 opacity: 0.3;
             }
@@ -582,9 +633,9 @@
 .footerDiv {
     @include column;
     align-items: center;
-    background-color: #352F44;
-    color: #FAF0E6;
-    border-top: 1px solid grey;
+    background-color: #0d0b11;
+    color: #cf6a3f;
+
 
     .footerLogo {
         width: 70px;

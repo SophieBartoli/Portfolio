@@ -7,16 +7,14 @@
 }
 
 .headerNavbar {
-  background-color: #272232;
+  background-color: #0d0b11;
   padding: 0 !important;
   height: 70px;
-  border-bottom: 1px solid #FAF0E6;
+  font-size: 20px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   .headerNavbar {
     font-size: 10px;
-    border: 2px solid green;
-    width: 320px;
   }
 }
 .headerNavbar .headerNav {
@@ -24,34 +22,24 @@
   flex-direction: row;
   align-items: center;
 }
-@media only screen and (max-width: 320px) {
-  .headerNavbar .headerNav {
-    border: 2px solid blue;
-    width: 320px;
-  }
-}
 .headerNavbar .headerNav .nav-link {
-  color: #FAF0E6;
+  color: #cf6a3f;
   margin: 0 10px 0 0 !important;
 }
-@media only screen and (max-width: 320px) {
-  .headerNavbar .headerNav .nav-link {
-    border: 2px solid red;
-  }
-}
 .headerNavbar .headerNav img {
-  height: 40px;
+  height: 60px;
   width: auto;
   margin: 5px 30px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   .headerNavbar .headerNav img {
-    margin: 0 0 0 0;
+    margin: 0 7px 0 7px;
+    height: 50px;
   }
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-  color: grey !important;
+  color: #FAF0E6 !important;
 }
 
 .aProposDiv {
@@ -65,60 +53,20 @@
   background-color: #272232;
   position: relative;
 }
+@media (min-width: 425px) and (max-width: 768px) {
+  .aProposDiv {
+    height: 800px;
+  }
+}
 .aProposDiv button {
   background-color: #272232;
   border: none;
   color: #FAF0E6;
   position: relative;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   .aProposDiv button {
     font-size: 10px;
-  }
-}
-.aProposDiv .lanterneLogo {
-  height: 160px;
-  width: auto;
-  position: absolute;
-  margin: 20px 0 0 0;
-  opacity: 0.5;
-}
-@media only screen and (max-width: 320px) {
-  .aProposDiv .lanterneLogo {
-    height: 80px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .aProposDiv #lanterneUne {
-    margin: 20px 0 0 -25px;
-  }
-}
-.aProposDiv #lanterneDeux {
-  height: 120px;
-  margin: 20px 0 0 150px;
-}
-@media only screen and (max-width: 320px) {
-  .aProposDiv #lanterneDeux {
-    height: 50px;
-    margin: 20px 0 0 40px;
-  }
-}
-.aProposDiv #lanterneTrois {
-  margin: 20px 0 0 1230px;
-}
-@media only screen and (max-width: 320px) {
-  .aProposDiv #lanterneTrois {
-    margin: 20px 0 0 230px;
-  }
-}
-.aProposDiv #lanterneQuatre {
-  height: 120px;
-  margin: 20px 0 0 1150px;
-}
-@media only screen and (max-width: 320px) {
-  .aProposDiv #lanterneQuatre {
-    height: 50px;
-    margin: 20px 0 0 210px;
   }
 }
 .aProposDiv .firstSlide {
@@ -138,19 +86,32 @@
   margin: 0 0 50px 0;
   font-size: 60px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   .aProposDiv .firstSlide div h1 {
     font-size: 30px;
     text-align: center;
     margin: 0 0 20px 0;
   }
 }
+@media (min-width: 425px) and (max-width: 768px) {
+  .aProposDiv .firstSlide div h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0 0 60px 0;
+  }
+}
 .aProposDiv .firstSlide div p {
   font-size: 20px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   .aProposDiv .firstSlide div p {
     font-size: 15px;
+    text-align: center;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .aProposDiv .firstSlide div p {
+    font-size: 25px;
     text-align: center;
   }
 }
@@ -161,9 +122,14 @@
   opacity: 0.1;
   position: absolute;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   .aProposDiv .firstSlide .logoImg {
     height: 40%;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .aProposDiv .firstSlide .logoImg {
+    height: 50%;
   }
 }
 .aProposDiv .secondSlide {
@@ -178,18 +144,31 @@
   margin: 0 0 50px 0;
   font-size: 60px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   .aProposDiv .secondSlide h2 {
     font-size: 30px;
     text-align: center;
     margin: 0 0 20px 0;
   }
 }
+@media (min-width: 425px) and (max-width: 768px) {
+  .aProposDiv .secondSlide h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 60px 0;
+  }
+}
 .aProposDiv .secondSlide .hobbies {
   display: flex;
   flex-direction: row;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
+  .aProposDiv .secondSlide .hobbies {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
   .aProposDiv .secondSlide .hobbies {
     display: flex;
     flex-direction: column;
@@ -202,9 +181,14 @@
   align-items: center;
   justify-content: center;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   .aProposDiv .secondSlide .hobbies div {
     margin: 0 0 20px 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .aProposDiv .secondSlide .hobbies div {
+    margin: 0 0 30px 0;
   }
 }
 .aProposDiv .secondSlide .hobbies div img {
@@ -214,9 +198,14 @@
   border: 3px solid #FAF0E6;
   border-radius: 5%;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   .aProposDiv .secondSlide .hobbies div img {
     width: 170px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .aProposDiv .secondSlide .hobbies div img {
+    width: 250px;
   }
 }
 .aProposDiv .secondSlide .hobbies div p {
@@ -225,7 +214,7 @@
   opacity: 0;
   text-align: center;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   .aProposDiv .secondSlide .hobbies div p {
     font-size: 15px;
   }
@@ -236,7 +225,15 @@
 .aProposDiv .secondSlide .hobbies :hover p {
   opacity: 1;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
+  .aProposDiv .secondSlide .hobbies :active img {
+    filter: brightness(30%);
+  }
+  .aProposDiv .secondSlide .hobbies :active p {
+    opacity: 1;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
   .aProposDiv .secondSlide .hobbies :active img {
     filter: brightness(30%);
   }
@@ -261,9 +258,16 @@
   margin: 60px 0 0 0;
   color: #352F44;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #competences h2 {
     font-size: 30px;
+    text-align: center;
+    margin: 30px 0 50px 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  #competences h2 {
+    font-size: 40px;
     text-align: center;
     margin: 30px 0 50px 0;
   }
@@ -274,11 +278,18 @@
   flex-direction: row;
   align-items: center;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #competences .competencesDiv {
     display: flex;
     flex-direction: column;
     height: 950px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  #competences .competencesDiv {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
   }
 }
 #competences .competencesDiv .competencesCards {
@@ -288,11 +299,18 @@
   border-radius: 5%;
   box-shadow: 5px 5px 5px 5px darkgrey;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #competences .competencesDiv .competencesCards {
     height: 290px;
     margin: 0 0 30px 0;
     width: 230px !important;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  #competences .competencesDiv .competencesCards {
+    height: 350px;
+    margin: 0 0 30px 0;
+    width: 300px !important;
   }
 }
 #competences .competencesDiv .competencesCards img {
@@ -301,9 +319,14 @@
   border-radius: 20%;
   opacity: 0.8;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #competences .competencesDiv .competencesCards img {
     height: 100px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  #competences .competencesDiv .competencesCards img {
+    height: 150px;
   }
 }
 #competences .competencesDiv .competencesCards .cardBody {
@@ -330,9 +353,14 @@
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #projets {
     height: 1100px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  #projets {
+    height: 1500px;
   }
 }
 #projets h2 {
@@ -341,9 +369,15 @@
   font-weight: bold;
   font-size: 40px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #projets h2 {
     font-size: 30px;
+    text-align: center;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  #projets h2 {
+    font-size: 40px;
     text-align: center;
   }
 }
@@ -351,7 +385,13 @@
   display: flex;
   flex-direction: row;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
+  #projets .projetsDiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
   #projets .projetsDiv {
     display: flex;
     flex-direction: column;
@@ -369,10 +409,17 @@
   justify-content: center;
   border: none;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #projets .projetsDiv .card {
     height: 200px;
     width: 250px;
+    margin: 0 0 40px 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  #projets .projetsDiv .card {
+    height: 300px;
+    width: 350px;
     margin: 0 0 40px 0;
   }
 }
@@ -387,7 +434,7 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #projets .projetsDiv .card .cardText {
     width: 250px;
     margin: 145px 0 0 0;
@@ -414,7 +461,7 @@
   border-radius: 10%;
   box-shadow: 5px 5px 5px 5px rgba(29, 22, 43, 0.7);
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #projets .projetsDiv .card a img {
     height: 200px;
     width: 250px;
@@ -444,9 +491,15 @@
   font-size: 40px;
   color: #352F44;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #contact h2 {
     font-size: 30px;
+    text-align: center;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  #contact h2 {
+    font-size: 40px;
     text-align: center;
   }
 }
@@ -465,9 +518,14 @@
   width: 40%;
   justify-content: center;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #contact .contactDivs .contactForm {
     width: 90%;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  #contact .contactDivs .contactForm {
+    width: 80%;
   }
 }
 #contact .contactDivs .contactForm label {
@@ -497,7 +555,12 @@
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   font-weight: bold;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
+  #contact .contactDivs .contactForm .submitButton {
+    width: 40%;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
   #contact .contactDivs .contactForm .submitButton {
     width: 40%;
   }
@@ -509,7 +572,13 @@
   justify-content: space-around;
   margin: 0 0 20px 0;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
+  #contact .contactDivs .contactForm .contactUser {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
   #contact .contactDivs .contactForm .contactUser {
     display: flex;
     flex-direction: column;
@@ -523,9 +592,16 @@
   width: auto;
   opacity: 0.8;
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 424px) {
   #contact .contactDivs img {
     height: 200px;
+    position: absolute;
+    opacity: 0.3;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  #contact .contactDivs img {
+    height: 400px;
     position: absolute;
     opacity: 0.3;
   }
@@ -535,9 +611,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #352F44;
-  color: #FAF0E6;
-  border-top: 1px solid grey;
+  background-color: #0d0b11;
+  color: #cf6a3f;
 }
 .footerDiv .footerLogo {
   width: 70px;
