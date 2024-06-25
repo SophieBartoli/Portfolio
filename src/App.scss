@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,1000;1,100;1,300;1,400;1,700;1,1000&display=swap');
 
 @mixin fontStyle {
     font-family: 'Lato', sans-serif;
@@ -35,7 +35,7 @@
         font-size: 10px;
     }
 
-    @media (min-width: 425px) and (max-width: 768px) {
+    @media (min-width: 425px) and (max-width: 1000px) {
         font-size: 10px;
     }
 
@@ -60,7 +60,7 @@
                 height: 50px;
             }
 
-            @media (min-width: 425px) and (max-width: 768px) {
+            @media (min-width: 425px) and (max-width: 1000px) {
                 margin: 0 7px 0 7px;
                 height: 50px;
             }
@@ -85,7 +85,7 @@
     background-color: #17141d;
     position: relative;
 
-    @media (min-width: 425px) and (max-width: 768px) {
+    @media (min-width: 425px) and (max-width: 1000px) {
         height: 800px;
     }
     
@@ -123,7 +123,7 @@
                     margin: 0 0 20px 0;
                 }
 
-                @media (min-width: 425px) and (max-width: 768px) {
+                @media (min-width: 425px) and (max-width: 1000px) {
                     font-size: 45px;
                     text-align: center;
                     margin: 0 0 60px 0;
@@ -138,7 +138,7 @@
                     text-align: center;
                 }
 
-                @media (min-width: 425px) and (max-width: 768px) {
+                @media (min-width: 425px) and (max-width: 1000px) {
                     font-size: 25px;
                     text-align: center;
                 }
@@ -157,7 +157,7 @@
                 height: 30%;
             }
 
-            @media (min-width: 425px) and (max-width: 768px) {
+            @media (min-width: 425px) and (max-width: 1000px) {
                 height: 35%;
             }
         } 
@@ -180,7 +180,7 @@
                 margin: 0 0 20px 0;
             }
 
-            @media (min-width: 425px) and (max-width: 768px) {
+            @media (min-width: 425px) and (max-width: 1000px) {
                 font-size: 40px;
                 text-align: center;
                 margin: 0 0 60px 0;
@@ -194,7 +194,7 @@
                @include column;
             }
 
-            @media (min-width: 425px) and (max-width: 768px) {
+            @media (min-width: 425px) and (max-width: 1000px) {
                 @include column;
             }
 
@@ -208,7 +208,7 @@
                     margin: 0 0 20px 0;
                 }
 
-                @media (min-width: 425px) and (max-width: 768px) {
+                @media (min-width: 425px) and (max-width: 1000px) {
                     margin: 0 0 30px 0;
                 }
 
@@ -223,7 +223,7 @@
                         width: 170px;
                     }
 
-                    @media (min-width: 425px) and (max-width: 768px) {
+                    @media (min-width: 425px) and (max-width: 1000px) {
                         width: 250px;
                     }
                 } 
@@ -259,7 +259,7 @@
                 }
             }
 
-            @media (min-width: 425px) and (max-width: 768px) {
+            @media (min-width: 425px) and (max-width: 1000px) {
                 :active img {
                     filter: brightness(30%);
                 }
@@ -297,7 +297,7 @@
             margin: 30px 0 50px 0;
         }
 
-        @media (min-width: 425px) and (max-width: 768px) {
+        @media (min-width: 425px) and (max-width: 1000px) {
             font-size: 40px;
             text-align: center;
             margin: 30px 0 50px 0;
@@ -315,7 +315,7 @@
         }
 
         
-        @media (min-width: 425px) and (max-width: 768px) {
+        @media (min-width: 425px) and (max-width: 1000px) {
             @include column;
             height: 1000px;
         }
@@ -333,7 +333,7 @@
                 width: 230px !important;
             }
 
-            @media (min-width: 425px) and (max-width: 768px) {
+            @media (min-width: 425px) and (max-width: 1000px) {
                 height: 350px;
                 margin: 0 0 30px 0;
                 width: 300px !important;
@@ -349,7 +349,7 @@
                     height: 100px;
                 }
 
-                @media (min-width: 425px) and (max-width: 768px) {
+                @media (min-width: 425px) and (max-width: 1000px) {
                     height: 150px;
                 }
             }
@@ -388,7 +388,7 @@
         height: 1100px;
     }
 
-    @media (min-width: 425px) and (max-width: 768px) {
+    @media (min-width: 425px) and (max-width: 1000px) {
         height: 1500px;
     }
 
@@ -404,7 +404,7 @@
             margin: 60px 0 60px 0;
         }
 
-        @media (min-width: 425px) and (max-width: 768px) {
+        @media (min-width: 425px) and (max-width: 1000px) {
             font-size: 40px;
             text-align: center;
             margin: 80px 0 60px 0;
@@ -414,22 +414,22 @@
     .projetsDiv {
         @include row;
         margin: 0 0 100px 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        padding-left: 0;
 
         @media only screen and (max-width: 424px) {
             @include column;
         }
 
-        @media (min-width: 425px) and (max-width: 768px) {
+        @media (min-width: 425px) and (max-width: 1000px) {
             @include column;
         }
 
-        @media (min-width: 769px) and (max-width: 1024px) {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
         .card {
-            @include column; 
+            @include column;
             margin: 0 20px 50px 20px;
             height: 300px;
             width: 300px;
@@ -437,7 +437,6 @@
             background-color: transparent;
             align-items: center;
             justify-content: center;
-            border: none;
 
             @media only screen and (max-width: 424px) {
                 height: 200px;
@@ -445,7 +444,7 @@
                 margin: 0 0 40px 0;
             }
 
-            @media (min-width: 425px) and (max-width: 768px) {
+            @media (min-width: 425px) and (max-width: 1000px) {
                 height: 300px;
                 width: 350px;
                 margin: 0 0 40px 0;
@@ -532,7 +531,7 @@
             text-align: center;
         }
 
-        @media (min-width: 425px) and (max-width: 768px) {
+        @media (min-width: 425px) and (max-width: 1000px) {
             font-size: 40px;
             text-align: center;
         }
@@ -555,7 +554,7 @@
                 width: 90%;
             }
 
-            @media (min-width: 425px) and (max-width: 768px) {
+            @media (min-width: 425px) and (max-width: 1000px) {
                 width: 80%;
             }
     
@@ -595,7 +594,7 @@
                     width: 40%;
                 }
 
-                @media (min-width: 425px) and (max-width: 768px) {
+                @media (min-width: 425px) and (max-width: 1000px) {
                     width: 40%;
                 }
             }
@@ -610,7 +609,7 @@
                     @include column;
                 }
 
-                @media (min-width: 425px) and (max-width: 768px) {
+                @media (min-width: 425px) and (max-width: 1000px) {
                     @include column;
                 }
 
@@ -632,7 +631,7 @@
                 opacity: 0.3;
             }
 
-            @media (min-width: 425px) and (max-width: 768px) {
+            @media (min-width: 425px) and (max-width: 1000px) {
                 height: 300px;
                 position: absolute;
                 opacity: 0.3;

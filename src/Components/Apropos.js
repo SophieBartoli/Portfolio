@@ -24,7 +24,7 @@ function Apropos () {
             <div>
               <h1>Quelques mots sur moi...</h1>
               <p>Passionnée par la programmation et l'audiovisuel depuis l'enfance,<br></br> j'ai d'abord effectué une licence cinématographique.<br>
-        </br><br></br>Très intéressée par les jeux vidéos et les applications mobiles,<br></br> j'ai décidé d'obtenir un premier diplôme en développement web.</p>
+        </br><br></br>Très intéressée par les jeux vidéo et les applications mobiles,<br></br> j'ai décidé d'obtenir un premier diplôme en développement web.</p>
             </div>
             <img  className="logoImg" src={ logo } alt="portrait Sophie Bartoli" />
           </div>

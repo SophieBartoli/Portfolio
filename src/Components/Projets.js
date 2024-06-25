@@ -14,8 +14,6 @@ function Projets() {
 
   const [websites, setWebsites] = useState([]);
 
-  console.log(websites);
-
   useEffect(
     () =>
       onSnapshot(collection(db, "projets"), (snapshot) =>
@@ -24,13 +22,12 @@ function Projets() {
     []
   );
 
-
   return (
     <div id="projets">
       <h2> Mes projets</h2>
-      <div className="projetsDiv">
+      <div>
 
-        <ul>
+        <ul className="projetsDiv">
           {websites.map((website) => (
             <li key={website.id}>
               <ProjetsCards imgUrl={website.url} imgSource={ Booki } imgAlt={website.alt} imgTitle={website.title} imgText={website.texte}/>
