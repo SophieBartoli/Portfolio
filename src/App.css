@@ -1,0 +1,657 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,1000;1,100;1,300;1,400;1,700;1,1000&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+}
+* p, * h1, * h2, * h3 {
+  cursor: default;
+}
+
+.headerNavbar {
+  background-color: #0d0b11;
+  padding: 0 !important;
+  height: 70px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 424px) {
+  .headerNavbar {
+    font-size: 10px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .headerNavbar {
+    font-size: 10px;
+  }
+}
+.headerNavbar .headerNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 !important;
+}
+.headerNavbar .headerNav .nav-link {
+  color: #cf6a3f;
+}
+.headerNavbar .headerNav img {
+  height: 60px;
+  width: auto;
+  margin: 5px 30px;
+}
+@media only screen and (max-width: 424px) {
+  .headerNavbar .headerNav img {
+    margin: 0 7px 0 7px;
+    height: 50px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .headerNavbar .headerNav img {
+    margin: 0 7px 0 7px;
+    height: 50px;
+  }
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #FAF0E6 !important;
+}
+
+.aProposDiv {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0 0 0;
+  justify-content: space-between;
+  height: 600px;
+  color: #fbf7f3;
+  font-weight: bold;
+  background-color: #17141d;
+  position: relative;
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .aProposDiv {
+    height: 800px;
+  }
+}
+.aProposDiv button {
+  background-color: #17141d;
+  border: none;
+  color: #FAF0E6;
+  position: relative;
+}
+@media only screen and (max-width: 424px) {
+  .aProposDiv button {
+    font-size: 10px;
+  }
+}
+.aProposDiv .firstSlide {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+.aProposDiv .firstSlide div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.aProposDiv .firstSlide div h1 {
+  margin: 0 0 50px 0;
+  font-size: 60px;
+}
+@media only screen and (max-width: 424px) {
+  .aProposDiv .firstSlide div h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .aProposDiv .firstSlide div h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 0 0 60px 0;
+  }
+}
+.aProposDiv .firstSlide div p {
+  font-size: 20px;
+}
+@media only screen and (max-width: 424px) {
+  .aProposDiv .firstSlide div p {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .aProposDiv .firstSlide div p {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+.aProposDiv .firstSlide .logoImg {
+  height: 80%;
+  width: auto;
+  z-index: 0;
+  opacity: 0.1;
+  position: absolute;
+}
+@media only screen and (max-width: 424px) {
+  .aProposDiv .firstSlide .logoImg {
+    height: 30%;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .aProposDiv .firstSlide .logoImg {
+    height: 35%;
+  }
+}
+.aProposDiv .secondSlide {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 0 0;
+}
+.aProposDiv .secondSlide h2 {
+  margin: 0 0 50px 0;
+  font-size: 60px;
+}
+@media only screen and (max-width: 424px) {
+  .aProposDiv .secondSlide h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .aProposDiv .secondSlide h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 60px 0;
+  }
+}
+.aProposDiv .secondSlide .hobbies {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 424px) {
+  .aProposDiv .secondSlide .hobbies {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .aProposDiv .secondSlide .hobbies {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.aProposDiv .secondSlide .hobbies div {
+  margin: 0 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 424px) {
+  .aProposDiv .secondSlide .hobbies div {
+    margin: 0 0 20px 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .aProposDiv .secondSlide .hobbies div {
+    margin: 0 0 30px 0;
+  }
+}
+.aProposDiv .secondSlide .hobbies div img {
+  position: relative;
+  width: 400px;
+  height: auto;
+  border: 3px solid #FAF0E6;
+  border-radius: 5%;
+}
+@media only screen and (max-width: 424px) {
+  .aProposDiv .secondSlide .hobbies div img {
+    width: 170px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .aProposDiv .secondSlide .hobbies div img {
+    width: 250px;
+  }
+}
+.aProposDiv .secondSlide .hobbies div p {
+  position: absolute;
+  font-size: 30px;
+  opacity: 0;
+  text-align: center;
+}
+@media only screen and (max-width: 424px) {
+  .aProposDiv .secondSlide .hobbies div p {
+    font-size: 15px;
+  }
+}
+.aProposDiv .secondSlide .hobbies :hover img {
+  filter: brightness(30%);
+}
+.aProposDiv .secondSlide .hobbies :hover p {
+  opacity: 1;
+}
+@media only screen and (max-width: 424px) {
+  .aProposDiv .secondSlide .hobbies :active img {
+    filter: brightness(30%);
+  }
+  .aProposDiv .secondSlide .hobbies :active p {
+    opacity: 1;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  .aProposDiv .secondSlide .hobbies :active img {
+    filter: brightness(30%);
+  }
+  .aProposDiv .secondSlide .hobbies :active p {
+    opacity: 1;
+  }
+}
+.aProposDiv .descriptionDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+#competences {
+  background-color: #FAF0E6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#competences h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 60px 0 0 0;
+  color: #17141d;
+}
+@media only screen and (max-width: 424px) {
+  #competences h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 30px 0 50px 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #competences h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0 50px 0;
+  }
+}
+#competences .competencesDiv {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media only screen and (max-width: 424px) {
+  #competences .competencesDiv {
+    display: flex;
+    flex-direction: column;
+    height: 950px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #competences .competencesDiv {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+}
+#competences .competencesDiv .competencesCards {
+  border: 2px solid darkgrey;
+  margin: 0 20px 0 20px;
+  height: 400px;
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px 5px darkgrey;
+}
+@media only screen and (max-width: 424px) {
+  #competences .competencesDiv .competencesCards {
+    height: 290px;
+    margin: 0 0 30px 0;
+    width: 230px !important;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #competences .competencesDiv .competencesCards {
+    height: 350px;
+    margin: 0 0 30px 0;
+    width: 300px !important;
+  }
+}
+#competences .competencesDiv .competencesCards img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20%;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 424px) {
+  #competences .competencesDiv .competencesCards img {
+    height: 100px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #competences .competencesDiv .competencesCards img {
+    height: 150px;
+  }
+}
+#competences .competencesDiv .competencesCards .cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#competences .competencesDiv .competencesCards .cardBody .cardTitle {
+  font-weight: bold;
+  margin: 20px 0 0 0;
+  color: #17141d;
+}
+#competences .competencesDiv .competencesCards .cardBody .cardText {
+  text-align: center;
+  color: #17141d;
+}
+
+#projets {
+  background-color: #17141d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 424px) {
+  #projets {
+    height: 1100px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #projets {
+    height: 1500px;
+  }
+}
+#projets h2 {
+  color: #FAF0E6;
+  margin: 20px 0 60px 0;
+  font-weight: bold;
+  font-size: 40px;
+}
+@media only screen and (max-width: 424px) {
+  #projets h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 60px 0 60px 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #projets h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 80px 0 60px 0;
+  }
+}
+#projets .projetsDiv {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 100px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+@media only screen and (max-width: 424px) {
+  #projets .projetsDiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #projets .projetsDiv {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#projets .projetsDiv .card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 50px 20px;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 424px) {
+  #projets .projetsDiv .card {
+    height: 200px;
+    width: 250px;
+    margin: 0 0 40px 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #projets .projetsDiv .card {
+    height: 300px;
+    width: 350px;
+    margin: 0 0 40px 0;
+  }
+}
+#projets .projetsDiv .card .cardText {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  width: 300px;
+  margin: 220px 0 0 0;
+  padding: 0 0 0 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+@media only screen and (max-width: 424px) {
+  #projets .projetsDiv .card .cardText {
+    width: 250px;
+    margin: 145px 0 0 0;
+    font-size: 10px;
+  }
+}
+#projets .projetsDiv .card a {
+  border: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #17141d;
+}
+#projets .projetsDiv .card a img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  filter: brightness(70%);
+  border-radius: 10%;
+  box-shadow: 5px 5px 5px 5px rgba(29, 22, 43, 0.7);
+}
+@media only screen and (max-width: 424px) {
+  #projets .projetsDiv .card a img {
+    height: 200px;
+    width: 250px;
+  }
+}
+#projets .projetsDiv .card a .imgIcon {
+  color: white;
+  position: absolute;
+  font-size: 20px;
+  cursor: pointer;
+}
+#projets .projetsDiv .card :hover img {
+  filter: brightness(50%);
+}
+
+#contact {
+  height: 600px;
+  background-color: #FAF0E6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact h2 {
+  margin: 0 0 60px 0;
+  font-weight: bold;
+  font-size: 40px;
+  color: #17141d;
+}
+@media only screen and (max-width: 424px) {
+  #contact h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #contact h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+#contact .contactDivs {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+}
+#contact .contactDivs .contactForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  z-index: 2;
+  font-weight: bold;
+  width: 40%;
+  justify-content: center;
+}
+@media only screen and (max-width: 424px) {
+  #contact .contactDivs .contactForm {
+    width: 90%;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #contact .contactDivs .contactForm {
+    width: 80%;
+  }
+}
+#contact .contactDivs .contactForm label {
+  margin: 0 0 0 0;
+  color: #17141d;
+}
+#contact .contactDivs .contactForm input {
+  margin: 20px 0 0 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#contact .contactDivs .contactForm textarea {
+  height: 150px;
+  margin: 20px 0 0 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border: none;
+  border-radius: 5px;
+}
+#contact .contactDivs .contactForm textarea:focus {
+  border: 2px solid #cf6a3f !important;
+}
+#contact .contactDivs .contactForm textarea:active {
+  border: 2px solid #cf6a3f;
+}
+#contact .contactDivs .contactForm .submitButton {
+  background-color: #cf6a3f;
+  border: none;
+  color: white;
+  width: 20%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  font-weight: bold;
+  margin: 30px 0 0 0;
+}
+@media only screen and (max-width: 424px) {
+  #contact .contactDivs .contactForm .submitButton {
+    width: 40%;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #contact .contactDivs .contactForm .submitButton {
+    width: 40%;
+  }
+}
+#contact .contactDivs .contactForm .contactUser {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 0 0 20px 0;
+}
+@media only screen and (max-width: 424px) {
+  #contact .contactDivs .contactForm .contactUser {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #contact .contactDivs .contactForm .contactUser {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#contact .contactDivs img {
+  height: 400px;
+  width: auto;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 424px) {
+  #contact .contactDivs img {
+    height: 200px;
+    position: absolute;
+    opacity: 0.3;
+  }
+}
+@media (min-width: 425px) and (max-width: 1000px) {
+  #contact .contactDivs img {
+    height: 300px;
+    position: absolute;
+    opacity: 0.3;
+  }
+}
+
+.footerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d0b11;
+  color: #cf6a3f;
+}
+.footerDiv .footerLogo {
+  width: 70px;
+  height: auto;
+  margin: 0 0 10px 0;
+}
+.footerDiv p {
+  font-size: 15px;
+  margin: 20px 0 5px 0;
+}
+.footerDiv .footerLinksDiv {
+  display: flex;
+  flex-direction: row;
+}
+.footerDiv .footerLinksDiv .linkLogo img {
+  height: 50px;
+  width: auto;
+  opacity: 0.7;
+  margin: 20px -7px 0 -7px;
+}
+
+/*# sourceMappingURL=App.css.map */
