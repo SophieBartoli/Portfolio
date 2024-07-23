@@ -1,9 +1,9 @@
 import Form from 'react-bootstrap/Form';
 import logoEmail from '../Assets/Logos/logoEmail.webp';
 import db from "../firebase";
-import { useEffect, useState } from 'react';
-import { onSnapshot, collection, addDoc, doc, setDoc } from 'firebase/firestore';
 import { v4 as uuid } from 'uuid';
+import { doc, setDoc } from 'firebase/firestore';
+
 
 
 
@@ -11,7 +11,7 @@ const contactForm = document.querySelector(".contactForm");
 const nameForm = document.querySelector(".nameForm");
 const emailForm = document.querySelector(".emailForm");
 const messageForm = document.querySelector(".messageForm");
-const submitButton = document.querySelector(".submitButton");
+
 
 
 async function resultDoc(e) {

@@ -6,16 +6,21 @@ import { useState, useEffect } from 'react';
 import db from "../firebase";
 import { onSnapshot, collection } from 'firebase/firestore';
 
+/*
 import { storage } from "../firebase";
 import { ref, listAll, getDownloadURL } from 'firebase/storage';
+*/
 
 
 function Projets() {
 
   const [websites, setWebsites] = useState([]);
+
+  /*
   const [imageList, setImageList] = useState([]);
   const imageListRef = ref(storage, "images/");
   const imagesArray = [];
+  */
 
   useEffect(
     () =>
@@ -25,7 +30,7 @@ function Projets() {
     []
   );
 
-  useEffect( () => {
+  /*useEffect( () => {
     listAll(imageListRef).then((response) => {
       response.items.forEach((item) => {
         getDownloadURL(item).then((url) => {
@@ -36,6 +41,7 @@ function Projets() {
       })
     })
   }, []);
+  */
 
   return (
     <div id="projets">
