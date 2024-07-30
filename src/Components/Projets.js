@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import db from "../firebase";
 import { onSnapshot, collection } from 'firebase/firestore';
 
+
 /*
 import { storage } from "../firebase";
 import { ref, listAll, getDownloadURL } from 'firebase/storage';
@@ -26,6 +27,7 @@ function Projets() {
     () =>
       onSnapshot(collection(db, "projets"), (snapshot) =>
         setWebsites(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+
       ),
     []
   );
@@ -57,7 +59,7 @@ function Projets() {
         <ul className="projetsDiv">
           {websites.map((website) => (
             <li key={website.id}>
-              <ProjetsCards imgUrl={website.url} imgSource={ Booki } imgAlt={website.alt} imgTitle={website.title} imgText={website.texte}/>
+              <ProjetsCards imgUrl={website.url} imgSource={website.image} imgAlt={website.alt} imgTitle={website.title} imgText={website.texte}/>
             </li>
           ))}
         </ul>
