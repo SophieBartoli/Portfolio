@@ -35,12 +35,19 @@ function Contact() {
       <div className="contactDivs">
         <Form className="contactForm" ref={formRef} onSubmit={submitForm}>
           <div className="contactUser">
-            <input type="text" className="nameForm" placeholder="Nom" required={true} ref={nameRef} />
-            <input type="email" className="emailForm" placeholder="Email" required={true} ref={emailRef} />
+            <div className="formLabels">
+              <label for="name">Nom :</label>
+              <input id="name" type="text" className="nameForm" placeholder="Nom" required={true} ref={nameRef} />
+            </div>
+            <div className="formLabels">
+              <label for="email">Email :</label>
+              <input id="email" type="email" className="emailForm" placeholder="Email" required={true} ref={emailRef} />
+            </div>
           </div>
-          <textarea rows="4" className="messageForm" placeholder="Message" required={true} ref={messageRef} />
+          <label for="message" className="formSubmitLabel">Message :</label>
+          <textarea id="message" rows="4" className="messageForm" placeholder="Message" required={true} ref={messageRef} />
           <div>
-            <button className="submitButton" type="submit">Envoyer</button>
+            <button name="formSubmit" className="submitButton" type="submit">Envoyer</button>
           </div>
         </Form>
         <img src={logoEmail} alt="logo ordinateur" />

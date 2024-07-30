@@ -18,7 +18,7 @@ function Apropos () {
 
   return (
     <div id="apropos" className="aProposDiv">
-      <button onClick={Toggle}> <FontAwesomeIcon icon={faAngleLeft} size="4x"/> </button>
+      <button name="slideButton" onClick={Toggle}> <FontAwesomeIcon icon={faAngleLeft} size="4x"/> </button>
        {slide ? (
           <div className="firstSlide">
             <div>
@@ -53,7 +53,7 @@ function Apropos () {
             </div>
           </div>
                 )}
-      <button onClick={Toggle}> <FontAwesomeIcon icon={faAngleRight} size="4x"/> </button>
+      <button name="slideButton" onClick={Toggle}> <FontAwesomeIcon icon={faAngleRight} size="4x"/> </button>
     </div>
   )
 }
