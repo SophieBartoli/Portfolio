@@ -1,6 +1,5 @@
 import React from 'react'
 import ProjetsCards from './ProjetsCards';
-import Booki from '../Assets/Images/Booki.webp';
 import { useState, useEffect } from 'react';
 
 import db from "../firebase";
